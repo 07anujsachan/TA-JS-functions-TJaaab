@@ -147,7 +147,15 @@ Write a function named `oddOrEven` that accepts a`number` and returns
 
 Do the following with above problem.
 */
-
+function oddEven (){
+  let number = +prompt(`enter a  number `)
+  if (number % 2 === 0){
+    alert(`number is even`)
+  }else {
+    alert(`number is odd`)
+  }
+}
+oddEven();
 // - Write a Function Declaration
 
 // - Write an anonymous Function Expression
