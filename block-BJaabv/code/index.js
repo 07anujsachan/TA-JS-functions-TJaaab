@@ -8,9 +8,11 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(age) {
+  let dogYears = 7 * age 
+  return dogYears
 }
+calculateDogAge(5)
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +21,12 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age , number) {
+  let totalMoviesInOneYear = (number * 4 ) * 12
+  let numberOfMovies = totalMoviesInOneYear * age 
+  return numberOfMovies
 }
+calculateMoviesToWatch(50 , 2)
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -29,9 +34,11 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(celsius) {
+  let celsiusInF = (celsius*9)/5 + 32
+  return celsius + '°C is ' + celsiusInF + '°F'
 }
+celsiusToFahrenheit(25)
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,9 +46,11 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function fahrenheitToCelsius(fahrenheit) {
+   let fahrenheitInC = ((fahrenheit - 32)*5)/9
+  return fahrenheit + '°F is ' + fahrenheitInC + '°C'
 }
+fahrenheitToCelsius(25)
 
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
@@ -51,9 +60,15 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(x , n) {
+  if( n <= 0 ){
+    return "The number below 1 is not allowed"
+  }else {
+    let power = Math.pow( x , n )
+    return power
+  }
 }
+
 
 // Test
 pow(3, 2); // 9
@@ -66,8 +81,8 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
-  // Your code goes here
+function sumOrProductOfN(n , operation ) {
+  
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -104,5 +119,5 @@ min(0, -10);
 */
 
 function typeCheck() {
-  // Your code goes here
+  
 }
