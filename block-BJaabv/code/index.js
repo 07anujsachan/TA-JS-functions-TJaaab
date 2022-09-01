@@ -82,7 +82,21 @@ and return sum or product of 1,…,n. If user enters any other value than `sum` 
 */
 
 function sumOrProductOfN(n , operation ) {
-  
+  if(operation === "sum"){
+    let sum = 0
+for( let i=1 ; i<=n ; i++ ){
+sum += i;
+} return sum
+  }else if(operation === "product"){ 
+    let product = 1
+    
+    for( let i=1 ; i<=n ; i++ ){
+      product *= i;
+    }
+    return  product
+  }else{
+    alert('not valid reason')
+  }
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -93,22 +107,40 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
-  // Your code goes here
+function sumOfN(n) {
+  let sum = 0
+  for( let i=1 ; i<=n ; i++ ){
+    sum += i;
+    } return sum
 }
+sumOfN(10);
 
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 
 // Your code goes here
-
+function sumOfNWithMultiples(n) {
+  let sum = 0
+  for( let i=1 ; i<=n ; i++ ){
+    if( i % 5 === 0 || i % 7 === 0 ){
+      sum += i;
+    }
+  
+    } return sum
+}
+sumOfN(10);
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(x , y ) {
+  if( x < y){
+    return  x
+  } else {
+    return  y
+  }
+
 }
 
 min(0, 10);
@@ -118,6 +150,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  
+function typeCheck(value) {
+  return typeof value
 }
+typeCheck(20)
