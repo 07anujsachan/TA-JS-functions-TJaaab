@@ -4,7 +4,7 @@
 function sayHello (name) {
   alert(`Hello ${name}`)
 }
-sayHello("anuj");
+sayHello("Anuj");
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -16,7 +16,7 @@ Example:
 function getFullName(firstName ,lastName) {
   return` ${firstName} ${lastName}`
 }
-getFullName("anuj" , "sachan")
+getFullName("Anuj" , "Sachan")
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
