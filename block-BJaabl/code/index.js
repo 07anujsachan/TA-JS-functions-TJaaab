@@ -4,7 +4,7 @@
 function sayHello (name) {
   alert(`Hello ${name}`)
 }
-sayHello("anuj");
+sayHello("Anuj");
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
