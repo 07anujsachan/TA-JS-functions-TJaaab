@@ -9,8 +9,8 @@
 */
 
 function calculateDogAge(age) {
-  let dogYears = 7 * age 
-  return dogYears
+  let dogAge = 7 * age 
+  return dogAge
 }
 calculateDogAge(5)
 
