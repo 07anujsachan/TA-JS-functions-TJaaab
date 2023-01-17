@@ -17,7 +17,7 @@ function minToSec(minute) {
 }
 
 // - Execute the function with required parameter
-minToSec(5)
+minToSec(50)
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
 Return true and false based on that.
@@ -36,7 +36,7 @@ function isInRange(lower , upper , number) {
   }
 }
 // - Execute the function with required parameter
-isInRange(1, 15, 13)
+isInRange(5, 15, 13)
 /* 2. calculateBMI
 
 
