@@ -7,8 +7,8 @@ Do the following for the given problem:
 */
 
 // - Write a Function Decleration
-function convertToString(n) {
-  return String(n);
+function convertToString(num) {
+  return String(num);
 }
 
 // - Write a Function Expression
